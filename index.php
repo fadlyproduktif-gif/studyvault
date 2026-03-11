@@ -1,6 +1,28 @@
-<?php 
-//     $password = "fadly062501";
-//     $hash = password_hash($password, PASSWORD_DEFAULT);
-//     echo "$hash"
-    echo session_save_path();
-?>
+<?php
+session_start();
+$page = $_GET['page'] ?? 'dashboard';
+$routes = [
+    "dashboard" => "pages/dashboard/index.php",
+    "login" => "pages/login/index.php",
+    "register" => "pages/register/index.php"
+];
+require "config/database.php";
+require "config/app.php";
+
+require "layout/header.php";
+
+if (isset($_SESSION['user_id'])) {
+    include "layout/navbar.php";
+}
+
+if ($page !== 'login' && $page !== 'register'){
+    require BASE_PATH . "actions/auth/auth.php";
+}
+
+if (array_key_exists($page, $routes)) {
+    require $routes[$page];
+} else {
+    echo "404 page not found";
+}
+
+require "layout/footer.php";
