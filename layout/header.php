@@ -5,5 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Vault</title>
     <link rel="stylesheet" href="/studyvault/assets/CSS/style.css">
+    <link rel="stylesheet" href="/studyvault/assets/CSS/navbar.css">
+    <link rel="stylesheet" href="/studyvault/assets/CSS/content.css">
 </head>
 <body>
