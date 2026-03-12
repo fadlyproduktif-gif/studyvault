@@ -5,3 +5,4 @@
     <input type="password" placeholder="password" name="password">
     <input type="submit" value="login" >
 </form>
+<p>belum punya akun? <a href="<?= BASE_URL ?>index.php?page=register">buat akun</a> sekarang!</p>
