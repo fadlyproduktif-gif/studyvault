@@ -16,7 +16,9 @@ if (isset($_SESSION['user_id'])) {
 }
 
 if ($page !== 'login' && $page !== 'register'){
-    require BASE_PATH . "actions/auth/auth.php";
+    require BASE_PATH ."actions/auth/auth.php";
+} else {
+    require BASE_PATH ."actions/auth/authL.php";
 }
 
 if (array_key_exists($page, $routes)) {
