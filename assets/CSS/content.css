@@ -1,5 +1,44 @@
-.c-content{
-    height: auto;
-    width: 60vw;
-    margin: 10px;
+.c-content {
+  height: auto;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  background-color: #F9F9E0;
+  padding: 20px;
+  border-radius: 5px;
+  border: 0.5px solid white;
+}
+.c-judul{
+    padding: 20px;
+    text-align: center;
+}
+.judul{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.sub-judul{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* .judul , .sub-judul {
+    margin-bottom: 20px;
+} */
+
+.tombol{
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    background-color: #f1b87f;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: border-color 0.1s ease-in-out;
+}
+.tombol:hover{
+    border-color: black;
 }

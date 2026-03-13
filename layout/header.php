@@ -7,5 +7,6 @@
     <link rel="stylesheet" href="/studyvault/assets/CSS/style.css">
     <link rel="stylesheet" href="/studyvault/assets/CSS/navbar.css">
     <link rel="stylesheet" href="/studyvault/assets/CSS/content.css">
+    <link rel="stylesheet" href="/studyvault/assets/CSS/font.css">
 </head>
 <body>

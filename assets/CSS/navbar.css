@@ -1,23 +1,76 @@
-.navbar{
-    height: 5vh;
-    width: 98.8%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #f1b87f
+.navbar {
+  height: 5vh;
+  width: 100%;
+  align-items: center;
+  background-color: #f1b87f;
+  display: grid;
+  grid-template-columns: 20vw 60vw 20vw;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
-.navbar, .nav-a, .nav-h3 {
-    margin: 0px 20px 0px 0px;
+
+.nav-judul{
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.nav-text-j{
+    font-weight: 1000;
+}
+
+.nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.nav-a {
+    font-weight: 1000;
+    padding: 5px;
     color: black;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    transition: background-color 0.5s ease-in-out;
-    padding: 8px;
-}
-.nav-a, .nav-h3 {
+    transition: background-color 0.2s ease-in-out;
     border-radius: 8px;
+    font-size: 25px;
+    margin: 0px 20px 0px 20px;
+    padding: 3px 15px 3px 15px;
 }
-.nav-a:hover{
+
+.nav-a:hover {
     background-color: darkgray;
+}
+
+.nav-username{
+    /* background-color: blueviolet; */
+    padding-left:10px;
+    margin-left: 50px;
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.nav-text-u{
+    font-weight: 1000;
+    margin: 10px;
+}
+
+.logout{
+    margin: 10px;
+    padding: 3px 15px 3px 15px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #F9F9E0;
+    text-decoration: none;
+    color: rgb(65,65,65);
+    border: 1px solid transparent;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.logout:hover{
+    border-color: black;
 }
