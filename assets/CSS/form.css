@@ -1,0 +1,26 @@
+.con-form{
+    height: 100vh;
+    width: 100%;
+    display: flex;    
+    background: -moz-linear-gradient(right, green, orange);
+    background-repeat: repeat;
+}
+.cr-form{
+    background-color: aliceblue;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.ce-form{
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+    gap: 20px;
+
+}
+
+.label-l{
+}

@@ -8,5 +8,6 @@
     <link rel="stylesheet" href="/studyvault/assets/CSS/navbar.css">
     <link rel="stylesheet" href="/studyvault/assets/CSS/content.css">
     <link rel="stylesheet" href="/studyvault/assets/CSS/font.css">
+    <link rel="stylesheet" href="/studyvault/assets/CSS/form.css">
 </head>
 <body>
