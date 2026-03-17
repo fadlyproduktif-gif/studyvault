@@ -1,5 +1,5 @@
 <div style="text-align: center;">
-<form action="/studyvault/actions/auth/process-regist.php" method="POST" style="margin: 20px;">
+<form action="/studyvault/actions/process/process-regist.php" method="POST" style="margin: 20px;">
     <label>username</label>
     <input  required type="text" placeholder="username" name="username" >
     <br>

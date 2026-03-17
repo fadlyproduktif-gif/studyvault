@@ -4,41 +4,109 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
-  background-color: #F9F9E0;
+  background-color: #f9f9e0;
   padding: 20px;
   border-radius: 5px;
   border: 0.5px solid white;
 }
-.c-judul{
-    padding: 20px;
-    text-align: center;
+.c-judul {
+  padding: 20px;
+  text-align: center;
 }
-.judul{
-    font-size: 45px;
-    margin-bottom: 20px;
+.judul {
+  font-size: 45px;
+  margin-bottom: 20px;
 }
-.sub-judul{
-    font-weight: bold;
-    margin-bottom: 30px;
+.sub-judul {
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 /* .judul , .sub-judul {
     margin-bottom: 20px;
 } */
 
-.tombol{
-    text-decoration: none;
-    color: rgb(65, 65, 65);
-    background-color: #f1b87f;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-bottom: 8px;
-    padding-top: 8px;
-    border-radius: 8px;
-    font-weight: bold;
-    border: 1px solid transparent;
-    transition: border-color 0.1s ease-in-out;
+.tombol {
+  text-decoration: none;
+  color: rgb(65, 65, 65);
+  background-color: #f1b87f;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: border-color 0.1s ease-in-out;
 }
-.tombol:hover{
+.tombol:hover {
+  border-color: black;
+}
+
+.lb {
+  background-color: #f8c490;
+  width: 60vw;
+  height: auto;
+  margin: 0px auto 0px auto;
+  border-radius: 12px;
+}
+
+.c-semester {
+  width: 80vw;
+  height: auto;
+  margin: 5% auto 10px auto;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+.sc-semester{
+    text-decoration: none;
+    margin: 10px;
+}
+
+.semester{
+    color: black;
+    background-color: #f1b87f;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 10px;
+    margin: auto;
+    width: 65vw;
+    transition: transform 0.2s ease-in-out;
+}
+.semester:hover{
+    transform: scale(1.05);
+}
+
+.sign{
+    width: 50vw;
+    background-color: #f1b87f;
+    margin: auto;
+    text-align: center;
+    padding: 30px 10px 30px 10px;
+    border-radius: 12px;
+}
+
+.smt-button{
+    text-align: center;
+    background-color: rgb(30, 193, 243);
+    border: 1px solid transparent;
+    margin: 10px auto 0px auto;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    width: 150px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    transition: border-color 0.2s;
+}
+
+.smt-button:hover{
     border-color: black;
+}
+
+.c-smt-button{
+    text-decoration: none;
 }
