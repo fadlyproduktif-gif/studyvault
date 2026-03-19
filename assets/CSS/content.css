@@ -110,3 +110,25 @@
 .c-smt-button{
     text-decoration: none;
 }
+
+.cf-semester{
+  width: 40vw;
+  background-color: #f1b87f;
+  margin: 20px auto 10px auto;
+  border-radius: 12px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.select-semester{
+  padding: 20px 0px 10px 0px;
+}
+
+.select{
+  margin : 0px 2px 0px 2px;
+}
+.select, input {
+  padding: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
