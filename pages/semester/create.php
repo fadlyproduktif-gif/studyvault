@@ -6,7 +6,7 @@
 
 
     <div class="cf-semester">
-        <form action="<?= BASE_URL .'actions/process/process-semester.php' ?>" method="POST">
+        <form action="/studyvault/actions/process/process-semester.php" method="POST">
             <input type="text" value="<?= $_SESSION['user_id'] ?>" hidden name="user_id" >
             <div class="select-semester">
                 <label class="select"><b>semester :</b></label>
