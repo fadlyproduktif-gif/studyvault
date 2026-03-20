@@ -11,6 +11,7 @@ $result = mysqli_query($conn, $sql);
     </div>
 
     <div class="c-semester">
+        <a id="tambah-semester" class="c-smt-button" href="<?= BASE_URL . 'index.php?page=smt-create' ?>"><div class="add-button-semester">Tambah Semester</div></a>
         <?php
         if (mysqli_num_rows($result) == 0) {
             echo "<div class='sign'>
@@ -19,16 +20,19 @@ $result = mysqli_query($conn, $sql);
                         <a href='" . BASE_URL . "index.php?page=smt-create' class='c-smt-button'>
                         <div class='smt-button'>buat semester</div>
                         </a>
-                    </div>";
+                    </div>
+                    <script>
+                        var tmbl = document.getElementById('tambah-semester');
+                        tmbl.style.display = 'none';
+                    </script>";
         }
         ?>
-        <a class="c-smt-button" href="<?= BASE_URL . 'index.php?page=smt-create' ?>"><div class="add-button-semester">Tambah Semester</div></a>
         <?php
         while ($smt = mysqli_fetch_assoc($result)) :; ?>
             <a class="sc-semester" href="#">
                 <div class="semester">
                     <p style="color: black; font-weight: bold;"><?= $smt['nama_semester'] ?></p>
-                    <a href="/studyvault/actions/process/delete-semester.php?id=<?= $smt['id_semester'] ?>"> <img src="/studyvault/assets/image/hapus.png" style="width: 35px;" alt="" srcset=""></a>
+                    <a href="/studyvault/actions/process/process-delete-semester.php?id=<?= $smt['id_semester'] ?>" onclick="return konfirmasi()"> <img src="/studyvault/assets/image/hapus.png" style="width: 35px;" alt="" srcset=""></a>
                 </div>
             </a>
         <?php
@@ -37,3 +41,9 @@ $result = mysqli_query($conn, $sql);
 
     </div>
 </div>
+
+<script>
+    function konfirmasi(){
+        return confirm("yakin mw hapus data?");
+    }
+</script>
