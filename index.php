@@ -8,23 +8,23 @@ $routes = [
     "semester" => "pages/semester/index.php",
     "cnfm-semester" => "pages/semester/confirm.php",
     "smt-create" => "pages/semester/create.php",
-    "matakuliah" => "pages/matakulah/index.php",
+    "matakuliah" => "pages/matakuliah/index.php",
     "catatan" => "pages/catatan/index.php",
 
 ];
+
 require "config/database.php";
 require "config/app.php";
-
 require "layout/header.php";
 
 if (isset($_SESSION['user_id'])) {
     include "layout/navbar.php";
 }
 
-if ($page !== 'login' && $page !== 'register'){
-    require BASE_PATH ."actions/auth/auth.php";
+if ($page !== 'login' && $page !== 'register') {
+    require BASE_PATH . "actions/auth/auth.php";
 } else {
-    require BASE_PATH ."actions/auth/authL.php";
+    require BASE_PATH . "actions/auth/authL.php";
 }
 
 if (array_key_exists($page, $routes)) {

@@ -17,7 +17,7 @@ $result = mysqli_query($conn, $sql);
             echo "<div class='sign'>
                         <h2>semester anda belum terdaftar</h2>
                         <h3>buat semester sekarang</h3>
-                        <a href='" . BASE_URL . "index.php?page=smt-create' class='c-smt-button'>
+                        <a href='index.php?page=smt-create' class='c-smt-button'>
                         <div class='smt-button'>buat semester</div>
                         </a>
                     </div>
@@ -29,7 +29,7 @@ $result = mysqli_query($conn, $sql);
         ?>
         <?php
         while ($smt = mysqli_fetch_assoc($result)) :; ?>
-            <a class="sc-semester" href="#">
+            <a class="sc-semester" href="index.php?page=matakuliah&id=<?= $smt['id_semester'] ?>">
                 <div class="semester">
                     <p style="color: black; font-weight: bold;"><?= $smt['nama_semester'] ?></p>
                     <a href="/studyvault/actions/process/process-delete-semester.php?id=<?= $smt['id_semester'] ?>" onclick="return konfirmasi()"> <img src="/studyvault/assets/image/hapus.png" style="width: 35px;" alt="" srcset=""></a>
