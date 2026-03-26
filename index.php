@@ -9,6 +9,7 @@ $routes = [
     "cnfm-semester" => "pages/semester/confirm.php",
     "smt-create" => "pages/semester/create.php",
     "matakuliah" => "pages/matakuliah/index.php",
+    "mtkl-create" => "pages/matakuliah/create.php",
     "catatan" => "pages/catatan/index.php",
 
 ];

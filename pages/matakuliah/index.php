@@ -18,7 +18,7 @@ $result = mysqli_query($conn, $sql2);
     </div>
 
     <div class="c-semester">
-        <a id="tambah-semester" class="c-smt-button" href="<?= BASE_URL . 'index.php?page=smt-create' ?>">
+        <a id="tambah-semester" class="c-smt-button" href="index.php?page=mtkl-create&id=<?= $id_smt ?>">
             <div class="add-button-semester">Tambah Semester</div>
         </a>
         <?php
@@ -26,7 +26,7 @@ $result = mysqli_query($conn, $sql2);
             echo "<div class='sign'>
                         <h2>semester anda belum terdaftar</h2>
                         <h3>buat semester sekarang</h3>
-                        <a href='index.php?page=smt-create' class='c-smt-button'>
+                        <a href='index.php?page=mtkl-create&id=". $id_smt ."' class='c-smt-button'>
                         <div class='smt-button'>buat matakuliah</div>
                         </a>
                     </div>
@@ -41,7 +41,7 @@ $result = mysqli_query($conn, $sql2);
             <a class="sc-semester" href="index.php?page=matakuliah&id=<?= $mtkl['id_semester'] ?>">
                 <div class="semester">
                     <p style="color: black; font-weight: bold;"><?= $mtkl['nama_matakuliah'] ?></p>
-                    <a href="/studyvault/actions/process/process-delete-semester.php?id=<?= $mtkl['id_matakuliah'] ?>" onclick="return konfirmasi()"> <img src="/studyvault/assets/image/hapus.png" style="width: 35px;" alt="" srcset=""></a>
+                    <a href="/studyvault/actions/process/process-delete-matakuliah.php?id=<?= $mtkl['id_matakuliah'] ?>&id-smt=<?= $id_smt ?>" onclick="return konfirmasi()"> <img src="/studyvault/assets/image/hapus.png" style="width: 35px;" alt="" srcset=""></a>
                 </div>
             </a>
         <?php

@@ -151,3 +151,22 @@
   border-color: black;
   color: black;
 }
+
+.cf-matakuliah{
+  width: 60vw;
+  background-color: #f1b87f;
+  margin: 20px auto 10px auto;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+}
+
+.cft-matakuliah{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.cft-item{
+  margin-bottom: 10px;
+}
