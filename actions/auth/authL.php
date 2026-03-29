@@ -1,5 +1,5 @@
 <?php 
-session_Start();
+// session_Start();
 if(isset($_SESSION['user_id'])){
     if($page == "login"){
         echo"

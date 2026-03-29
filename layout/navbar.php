@@ -6,7 +6,7 @@
 
     <div class="nav-button">
         <a class="nav-a" href="<?= BASE_URL . "index.php?page=semester" ?>">semester</a>
-        <a class="nav-a" href="#">matakuliah</a>
+        <a class="nav-a" href="<?= BASE_URL . "index.php?page=mtkl-all" ?>">matakuliah</a>
         <a class="nav-a" href="">catatan</a>
     </div>
 

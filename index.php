@@ -10,12 +10,15 @@ $routes = [
     "smt-create" => "pages/semester/create.php",
     "matakuliah" => "pages/matakuliah/index.php",
     "mtkl-create" => "pages/matakuliah/create.php",
+    "mtkl-all" => "pages/matakuliah/all.php",
+    "mtkl-create-all" => "pages/matakuliah/createAll.php",
     "catatan" => "pages/catatan/index.php",
 
 ];
 
 require "config/database.php";
 require "config/app.php";
+require "config/debug.php";
 require "layout/header.php";
 
 if (isset($_SESSION['user_id'])) {
