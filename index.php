@@ -13,7 +13,7 @@ $routes = [
     "mtkl-all" => "pages/matakuliah/all.php",
     "mtkl-create-all" => "pages/matakuliah/createAll.php",
     "catatan" => "pages/catatan/index.php",
-
+    "crt-catatan" => "pages/catatan/create.php",
 ];
 
 require "config/database.php";

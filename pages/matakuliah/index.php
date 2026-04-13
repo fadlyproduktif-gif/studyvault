@@ -38,7 +38,7 @@ $result = mysqli_query($conn, $sql2);
         ?>
         <?php
         while ($mtkl = mysqli_fetch_assoc($result)) :; ?>
-            <a class="sc-semester" href="index.php?page=matakuliah&id=<?= $mtkl['id_semester'] ?>">
+            <a class="sc-semester" href="index.php?page=catatan&id=<?= $mtkl['id_matakuliah'] ?>">
                 <div class="semester">
                     <p style="color: black; font-weight: bold;"><?= $mtkl['nama_matakuliah'] ?></p>
                     <a href="/studyvault/actions/process/process-delete-matakuliah.php?id=<?= $mtkl['id_matakuliah'] ?>&id-smt=<?= $id_smt ?>" onclick="return konfirmasi()"> <img src="/studyvault/assets/image/hapus.png" style="width: 35px;" alt="" srcset=""></a>
